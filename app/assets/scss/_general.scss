@@ -1,6 +1,4 @@
-*,
-::before,
-::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,9 +14,9 @@ button:focus {outline: none;}
     margin: 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
-    max-width: 1920px;
+    max-width: 120rem;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    column-gap: 3rem;
+    grid-template-columns: repeat(12, minmax(0.5rem, 1fr));
+    column-gap: 2rem;
 }

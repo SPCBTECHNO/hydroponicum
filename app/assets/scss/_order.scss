@@ -1,0 +1,38 @@
+.order {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &__title,
+    &__content {
+        grid-column: 1 / 7;
+    }
+    &__banner {
+        grid-row: 1 / 3;
+        grid-column: 7 / 13;
+        background-image: url(../img/dist/bg-5.jpg);
+    }
+    &__bubble {
+        &-1 {
+            top: 18rem;
+            left: 20rem;
+            width: 5rem;
+            animation-duration: 0.75s;
+        }
+        &-2 {
+            width: 8rem;
+            top: 1rem;
+            left: 1rem;
+            animation-duration: 1.25s;
+        }
+        &-3 {
+            top: 5rem;
+            left: 5rem;
+        }
+        &-4 {
+            width: 6rem;
+            top: 2rem;
+            left: 20rem;
+            animation-duration: 0.5s;
+        }
+    }
+}

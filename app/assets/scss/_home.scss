@@ -1,0 +1,46 @@
+.home {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &__subtitle {grid-row: 1 / 2;}
+    &__title {
+        margin-top: 0.5rem;
+        grid-row: 2 / 3;
+    }
+    &__subtitle,
+    &__title,
+    &__content {grid-column: 1 / 7;}
+    &__content {
+        grid-row: 3 / 4;
+        p {margin-bottom: 1rem;}
+    }
+    &__banner {
+        grid-row: 1 / 4;
+        grid-column: 7 / 13;
+        background-image: url(../img/dist/bg-1.jpg);
+    }
+    &__bubble {
+        &-1 {
+            top: 5rem;
+            left: 2rem;
+            width: 5rem;
+            animation-duration: 0.75s;
+        }
+        &-2 {
+            width: 8rem;
+            top: 8rem;
+            left: 12rem;
+            animation-duration: 1.25s;
+        }
+        &-3 {
+            top: 5rem;
+            left: 5rem;
+        }
+        &-4 {
+            width: 6rem;
+            top: 16rem;
+            left: 2rem;
+            animation-duration: 0.5s;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.successes {
+    position: relative;
+    padding-top: 5rem;;
+    padding-bottom: 5rem;
+    &__title {
+        grid-row: 1 / 2;
+    }
+    &__title,
+    &__content {
+        grid-column: 1 / 7;
+    }
+    &__banner {
+        grid-row: 1 / 3;
+        grid-column: 7 / 13;
+        background-image: url(../img/dist/bg-2.jpeg);
+    }
+    &__bubble {
+        &-1 {
+            top: 8rem;
+            left: 4rem;
+            width: 5rem;
+            animation-duration: 0.75s;
+        }
+        &-2 {
+            width: 8rem;
+            top: 8rem;
+            left: 12rem;
+            animation-duration: 1.25s;
+        }
+        &-3 {
+            top: 12rem;
+            left: 3rem;
+        }
+        &-4 {
+            width: 6rem;
+            top: 16rem;
+            left: 2rem;
+            animation-duration: 0.5s;
+        }
+    }
+}

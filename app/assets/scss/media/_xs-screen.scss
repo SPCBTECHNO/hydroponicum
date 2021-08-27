@@ -1,8 +1,112 @@
+// 1. Стилизация контейнера
+// 2. Стилизация шапки
+
 @media screen and (max-width:575px) {
+
+    // 1. Стилизация контейнера
     .container {
         padding-right: 0.25rem;
         padding-left: 0.25rem;
         width: 100%;
         column-gap: 0.25rem;
+    }
+
+    // 2. Стилизация шапки
+    .header {
+        &__logo {
+            grid-column: 1 / 13;
+            justify-self: center;
+        }
+        &__nav {display: none;}
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .bubble {
+        display: none;
+    }
+
+    .banner {
+        height: 10rem;
+        grid-row: 1 / 2;
+    }
+    .title {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        grid-row: 2 / 3;
+        justify-self: center;
+        h2 {font-size: 1.5rem;}
+        h1 {font-size: 1.5rem;}
+        img {width: 2rem;}
+    }
+    .content {
+        grid-row: 3 / 4;
+    }
+
+    .banner,
+    .title,
+    .content {
+        grid-column: 1 / 13;
+    }
+
+    .contacts {
+        &__title {
+            margin-top: 0;
+            grid-row: 2 / 3;
+        }
+        &__form {
+            grid-row: 3 / 4;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            &_input {
+                margin-bottom: 1rem;
+            }
+            &_button {
+                height: 4rem;
+            }
+        }
+        &__required {
+            grid-row: 4 / 5;
+            grid-column: 1 / 13;
+            text-align: center;
+        }
+        &__agreement {
+            grid-row: 5 / 6;
+            grid-column: 1 / 13;
+            text-align: center;
+        }
+    }
+
+    .footer {
+        &__content {
+            text-align: center;
+        }
+        .policy {
+            grid-row: 4 / 5;
+        }
+
+        .copyright {
+            grid-row: 5 / 6;
+        }
+    }
+
+    .home {
+        margin-top: 2rem;
+        &__subtitle {
+            display: none;
+        }
+    }
+
+    .team {
+        &__title {
+            margin-top: 0;
+        }
+        &__content {
+            flex-wrap: wrap;
+            &_card {
+                width: 100%;
+            }
+        }
     }
 }

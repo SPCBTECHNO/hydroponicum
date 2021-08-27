@@ -5,4 +5,21 @@
         width: 60rem;
         column-gap: 1.5rem;
     }
+
+    .header {
+        &__logo {
+            grid-column: 1 / 13;
+            justify-self: center;
+        }
+        &__nav {display: none;}
+    }
+    .mobile-menu {
+        display: block;
+    }
+
+    .contacts {
+        &__form {
+            gap: 1rem;
+        }
+    }
 }

@@ -13,9 +13,10 @@ sass.compiler = require('node-sass');
 
 function browsersync() {
     browserSync.init({
-        server: { baseDir: 'app/' },
+        proxy: 'hydroponicum', /* Настройка для работы с веб-серверами */
+        // server: { baseDir: 'app/' },
         notify: false,
-        online: true /* Включение и отключение режима работы по сети */
+        online: true /* Настройка для включение и отключение режима работы по сети */
     })
 }
 function jquery() {
@@ -62,6 +63,7 @@ function copybuild() {
         'app/assets/img/dist/**/*',
         'app/assets/img/*.*',
         'app/**/*.html',
+        'app/**/*.php',
         'app/**/*.mp3',
         'app/favicon.png',
     ], { base: 'app' })

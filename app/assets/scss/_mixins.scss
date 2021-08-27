@@ -1,2 +1,10 @@
 $white: #fff;
 $black: #000;
+$grey: #ececec;
+
+$color-1: #93DC8A;
+$color-2: #1F3F50;
+
+%shadow {box-shadow: 0 0 4rem rgba($black, 0.25);}
+
+%transition {transition: all 0.3s ease-in-out;}

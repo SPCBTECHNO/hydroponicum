@@ -1,22 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    animation: none !important;
 }
 
 html {font-size: 16px;}
 
+body {font-family: 'Roboto', sans-serif;}
+
+body, a {color: $color-2;}
+
 button:focus {outline: none;}
+
 
 .wrapper {min-height: 100vh;}
 
 .container {
+    overflow: hidden;
     margin: 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
-    max-width: 120rem;
-    height: auto;
+    max-width: 82.5rem;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(12, minmax(0.5rem, 1fr));
     column-gap: 2rem;
+}
+
+.title {
+    margin-bottom: 3rem;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.content {p {margin-bottom: 1rem;}}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.policy-content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &__title,
+    p {
+        grid-column: 1 / 13;
+    }
+    &__title {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.error-404 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    &__title,
+    &__subtitle,
+    &__button {
+        grid-column: 1 / 13;
+    }
+    &__title {
+        font-size: 20rem;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__button {
+        margin-top: 2rem;
+        justify-self: center;
+    }
+}
+
+.bubble {
+    position: absolute;
+    animation-name: bounceIn;
+    animation-duration: 1s;
 }

@@ -1,0 +1,45 @@
+.team {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: $grey;
+    &__title {
+        grid-row: 1 / 2;
+        grid-column: 1 / 13;
+        justify-self: center;
+    }
+    &__content {
+        grid-row: 2 / 3;
+        grid-column: 1 / 13;
+        display: flex;
+        gap: 3rem;
+        &_card {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem;
+            background: rgba($white, .3);
+            border-radius: 1rem;
+            backdrop-filter: blur(1rem);
+            h3,
+            p {
+                width: 100%;
+                text-align: center;
+            }
+            h3 {
+                margin-top: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            .img {
+                margin: 0 auto;
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            &:first-child {.img {background-image: url(../img/dist/serj.jpeg);}}
+            &:nth-child(2) {.img {background-image: url(../img/dist/max.jpg);}}
+            &:last-child {.img {background-image: url(../img/dist/evgen.jpeg);}}
+        }
+    }
+}
